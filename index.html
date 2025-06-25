@@ -10,16 +10,54 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/css/home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fad63a2d48.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main-conteneur">
-      <header class="header"></header>
-      <section class="hero"></section>
+      <header>
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <img
+              src="./assets/logo.webp"
+              alt="Logo de l'entreprise O Miel représentant une abeille dans un style simple"
+            />
+            <p class="text-title">Ô Miel</p>
+          </div>
+          <button class="navbar__burger" id="burger-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="navbar__anchors" id="nav-anchors">
+            <button class="close-btn" id="burger-close">X</button>
+            <a href="#about">Notre Histoire</a>
+            <a href="#product">Notre Miel</a>
+            <a href="#review">Vos Avis</a>
+            <a href="#question">Vos Questions</a>
+          </div>
+        </nav>
+      </header>
+      <section class="hero">
+        <img
+          src="./assets/hero_picture.webp"
+          alt="Photo d'une ruche d'abeilles se faisant récoler son miel par un Apiculteur"
+        />
+        <div class="hero__accroche">
+          <h1>
+            Le miel de lavande de notre
+            <span class="text-highlight">Provence</span>
+          </h1>
+          <button class="cta">Découvrir</button>
+        </div>
+      </section>
       <section class="about"></section>
       <section class="product"></section>
       <section class="review"></section>
       <section class="question"></section>
       <footer class="footer"></footer>
     </div>
+    <script src="./scripts/script.js" defer></script>
   </body>
 </html>
