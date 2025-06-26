@@ -340,5 +340,39 @@ body .main-conteneur .review__conteneur .review__card .card-star .fa-star {
 body .main-conteneur .review__conteneur .review__card .card-star .unrated {
   color: #d9d9d9;
 }
+body .main-conteneur .faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+body .main-conteneur .faq h1 {
+  text-align: center;
+  max-width: 200px;
+  margin-bottom: 0;
+}
+body .main-conteneur .faq__conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 3%;
+}
+body .main-conteneur .faq__conteneur .faq__card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-conteneur .faq__conteneur .faq__card .question {
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+body .main-conteneur .faq__conteneur .faq__card .answer {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

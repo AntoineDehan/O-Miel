@@ -365,5 +365,42 @@ body {
         }
       }
     }
+
+    // Section FAQ
+    .faq {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1000px;
+
+      h1 {
+        text-align: center;
+        max-width: 200px;
+        margin-bottom: 0;
+      }
+      &__conteneur {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 3%;
+        .faq__card {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .question {
+            font-weight: 600;
+            font-size: 1.375rem;
+            margin-bottom: 0;
+            text-align: center;
+          }
+          .answer {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }
