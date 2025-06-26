@@ -49,8 +49,12 @@ body {
       font-weight: 600;
       border: none;
       background-color: $secondary-color;
+      border: 1px solid $secondary-color;
       padding: 10px 60px 10px 60px;
       cursor: pointer;
+      &:hover {
+        background-color: $main-bg-color;
+      }
     }
     section {
       margin-bottom: 30px;
@@ -106,16 +110,16 @@ body {
             gap: 1rem;
             position: absolute;
             top: 60px;
-            background: $secondary-color;
+            background: $main-bg-color;
             padding: 2px 1rem 1rem 1rem;
             width: 33%;
             z-index: 1;
+            border: 3px solid $secondary-color;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             a {
               width: 100%;
               font-family: Poppins;
               text-decoration: none;
-              color: $main-text-color;
               font-size: 1.25rem;
               font-weight: bold;
               text-align: center;
@@ -125,7 +129,7 @@ body {
             }
             .close-btn {
               border: none;
-              background-color: $secondary-color;
+              background-color: $main-bg-color;
               font-weight: bold;
               font-size: 1.5rem;
               cursor: pointer;
@@ -198,7 +202,6 @@ body {
         align-items: center;
         padding: 0 5% 0 5%;
         h2 {
-          // font-size: 1.5rem;
           color: $main-bg-color;
           text-align: center;
           position: absolute;
@@ -239,11 +242,13 @@ body {
           border-radius: 250px;
         }
         .product-arrow {
+          opacity: 0;
           position: absolute;
           width: 70px;
         }
 
         .product-text {
+          opacity: 0;
           position: absolute;
           text-align: center;
           font-size: 1.125rem;
@@ -257,11 +262,18 @@ body {
           right: 10px;
           top: -30px;
           transform: rotate(-5deg);
+          &.animate {
+            animation: fade-in 0.5s ease-out forwards;
+            animation-delay: 0.6s;
+          }
         }
         .arrow-top-right {
           right: 60px;
           top: 50px;
           transform: rotate(140deg) scaleX(-1);
+          &.animate {
+            animation: slide-in-right 0.8s ease-out forwards;
+          }
         }
         //2
         .text-top-left {
@@ -269,11 +281,17 @@ body {
           top: 18px;
           max-width: 120px;
           transform: rotate(5deg);
+          &.animate {
+            animation: fade-in 0.5s ease-out forwards;
+            animation-delay: 0.6s;
+          }
         }
         .arrow-top-left {
           left: 40px;
           top: 90px;
-          transform: rotate(180deg);
+          &.animate {
+            animation: slide-in-top-left 0.8s ease-out forwards;
+          }
         }
         //3
         .text-bottom-left {
@@ -283,11 +301,17 @@ body {
           padding: 0;
           width: 120px;
           transform: rotate(-4deg);
+          &.animate {
+            animation: fade-in 0.5s ease-out forwards;
+            animation-delay: 0.6s;
+          }
         }
         .arrow-bottom-left {
           left: 55px;
           bottom: 70px;
-          transform: rotate(-20deg);
+          &.animate {
+            animation: slide-in-bottom-left 0.8s ease-out forwards;
+          }
         }
       }
       &__description {
@@ -300,6 +324,53 @@ body {
       display: flex;
       justify-content: center;
       margin-bottom: 60px;
+    }
+
+    // Animations Arrows
+    @keyframes slide-in-top-left {
+      from {
+        transform: translateX(-100vw);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        transform: rotate(180deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-in-bottom-left {
+      from {
+        transform: translateX(-100vw);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        transform: rotate(-4deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-in-right {
+      from {
+        transform: translateX(100vw);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        transform: rotate(180deg) scaleX(-1);
+        opacity: 1;
+      }
+    }
+
+    // Simple animation de fondu
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     //Section review
@@ -411,6 +482,7 @@ body {
           display: flex;
           flex-direction: column;
           align-items: center;
+
           .question {
             font-weight: 600;
             font-size: 1.375rem;
@@ -418,7 +490,11 @@ body {
             text-align: center;
           }
           .answer {
+            opacity: 0;
             text-align: center;
+            &.animate {
+              animation: fade-in 0.6s ease-out forwards;
+            }
           }
         }
       }
@@ -545,7 +621,8 @@ body {
       header {
         padding-top: 0;
         .navbar {
-          height: 200px;
+          height: 100px;
+          padding-top: 20px;
           &__spacer {
             width: 0;
           }
@@ -553,6 +630,12 @@ body {
             width: 15%;
             align-items: start;
             padding-left: 50px;
+            img {
+              width: 60px;
+            }
+            p {
+              font-size: 1.5rem;
+            }
           }
           &__nav {
             width: 85%;
@@ -569,6 +652,7 @@ body {
               background: none;
               position: relative;
               box-shadow: none;
+              border: none;
               top: 0;
               width: 100%;
               padding: 0;
@@ -584,6 +668,10 @@ body {
         }
       }
       .hero {
+        height: 650px;
+        &__img {
+          object-fit: cover;
+        }
         &__accroche {
           left: 75%;
         }
@@ -640,8 +728,8 @@ body {
 
           //1
           .text-top-right {
-            right: 0px;
-            top: 210px;
+            right: 20px;
+            top: 10px;
             transform: rotate(-3deg);
           }
           .arrow-top-right {
@@ -769,6 +857,22 @@ body {
       .text-content {
         font-size: 1.875rem;
         line-height: 40px;
+      }
+      header {
+        .navbar {
+          &__nav {
+            .close-btn {
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+
+      .hero {
+        &__accroche {
+          width: 480px;
+          height: 350px;
+        }
       }
       .about {
         &__image {
