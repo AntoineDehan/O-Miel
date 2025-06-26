@@ -256,25 +256,40 @@ body .main-conteneur .product__description {
 body .main-conteneur .cta-conteneur {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
+}
+body .main-conteneur .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1100px;
+}
+body .main-conteneur .review h1 {
+  margin-bottom: 60px;
 }
 body .main-conteneur .review__conteneur {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5%;
+  height: 100%;
 }
 body .main-conteneur .review__conteneur .review__card {
-  width: 70%;
+  width: 65%;
+  max-width: 560px;
   background-color: #f2f2f2;
+  padding: 5%;
 }
 body .main-conteneur .review__conteneur .review__card .card-top {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10%;
 }
 body .main-conteneur .review__conteneur .review__card .card-top img {
-  width: 47px;
+  width: 50px;
   border-radius: 256px;
 }
 body .main-conteneur .review__conteneur .review__card .card-top .info-conteneur {
@@ -295,10 +310,35 @@ body .main-conteneur .review__conteneur .review__card .card-top .info-conteneur 
   padding: 0;
   padding-left: 5px;
   margin: 0;
+  font-family: Poppins;
 }
 body .main-conteneur .review__conteneur .review__card .card-content .main-content {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
   line-height: normal;
+  font-family: Poppins;
+}
+body .main-conteneur .review__conteneur .review__card .card-content .more {
+  font-size: 0.85rem;
+  color: #838383;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Poppins;
+}
+body .main-conteneur .review__conteneur .review__card .card-star {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 3px;
+}
+body .main-conteneur .review__conteneur .review__card .card-star .fa-star {
+  color: #f5ba17;
+  font-size: 1.25rem;
+}
+body .main-conteneur .review__conteneur .review__card .card-star .unrated {
+  color: #d9d9d9;
 }
 
 /*# sourceMappingURL=style.css.map */
