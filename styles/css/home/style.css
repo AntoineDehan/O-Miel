@@ -12,6 +12,7 @@ body .main-conteneur h1,
 body .main-conteneur h2,
 body .main-conteneur .text-title {
   font-family: Poppins;
+  color: #1a1a1a;
 }
 body .main-conteneur h1 {
   font-size: 1.5rem;
@@ -22,6 +23,8 @@ body .main-conteneur a,
 body .main-conteneur .text-content {
   font-family: Lato;
   font-size: 1.25rem;
+  line-height: 26px;
+  color: #1a1a1a;
 }
 body .main-conteneur .text-highlight {
   color: #e3b778;
@@ -33,6 +36,9 @@ body .main-conteneur .cta {
   border: none;
   background-color: #e3b778;
   padding: 10px 60px 10px 60px;
+}
+body .main-conteneur section {
+  margin-bottom: 30px;
 }
 body .main-conteneur header {
   padding-top: 15px;
@@ -131,6 +137,44 @@ body .main-conteneur .hero__accroche {
 body .main-conteneur .hero__accroche h1 {
   text-align: center;
   font-size: 1.5rem;
+}
+body .main-conteneur .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+body .main-conteneur .about__image {
+  width: 85%;
+  height: 142px;
+  border: 3px solid #e3b778;
+  margin-bottom: 10px;
+}
+body .main-conteneur .about__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(0.8px);
+}
+body .main-conteneur .about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+}
+body .main-conteneur .about__content h2 {
+  font-size: 1.5rem;
+  color: #faf7f0;
+  text-align: center;
+  position: absolute;
+  top: 22px;
+  width: 85%;
+  -webkit-text-stroke: 1px #1a1a1a;
+}
+body .main-conteneur .about__content p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
