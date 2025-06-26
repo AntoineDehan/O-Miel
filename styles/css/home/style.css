@@ -32,6 +32,16 @@ body .main-conteneur .text-content {
 body .main-conteneur .text-highlight {
   color: #e3b778;
 }
+body .main-conteneur .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 body .main-conteneur .cta {
   font-family: Poppins;
   font-size: 1.5rem;
@@ -127,7 +137,7 @@ body .main-conteneur .hero {
   height: 550px;
   border-bottom: 5px solid #e3b778;
 }
-body .main-conteneur .hero img {
+body .main-conteneur .hero__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -166,7 +176,7 @@ body .main-conteneur .about__image {
   border: 3px solid #e3b778;
   margin-bottom: 10px;
 }
-body .main-conteneur .about__image img {
+body .main-conteneur .about__image .about__img {
   object-fit: cover;
   width: 100%;
   height: 100%;

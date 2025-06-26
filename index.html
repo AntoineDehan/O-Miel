@@ -73,10 +73,16 @@
         </nav>
       </header>
       <section class="hero">
-        <img
-          src="./assets/hero_picture.webp"
-          alt="Photo d'une ruche d'abeilles se faisant récoler son miel par un Apiculteur"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/hero_picture_medium.webp" />
+          <img
+            class="hero__img"
+            src="./assets/hero_picture.webp"
+            alt="Photo d'une ruche d'abeilles se faisant récoler son miel par un Apiculteur"
+        /></picture>
+
         <div class="hero__accroche">
           <h1>
             Le miel de lavande de notre
@@ -88,10 +94,15 @@
       </section>
       <section class="about" id="about">
         <div class="about__image">
-          <img
-            src="./assets/presentation_img.webp"
-            alt="Image rapprochée d'une abeille butinant une plante de lavande"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/presentation_img_medium.webp" />
+            <img
+              class="about__img"
+              src="./assets/presentation_img.webp"
+              alt="Image rapprochée d'une abeille butinant une plante de lavande"
+          /></picture>
         </div>
         <div class="about__content">
           <h2>Une histoire de terroir et de passion.</h2>
@@ -110,11 +121,16 @@
       <section class="product" id="product">
         <h1>Notre Miel de Lavande récolté en Provence</h1>
         <div class="product__wrapper">
-          <img
-            class="product__image"
-            src="./assets/produit.webp"
-            alt="Le pot de miel de lavance récolté en provence de ô miel"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/produit_medium.webp" />
+            <img
+              class="product__image"
+              src="./assets/produit.webp"
+              alt="Le pot de miel de lavance récolté en provence de ô miel"
+          /></picture>
+
           <p class="product-text text-top-right">
             Naturellement riche en antioxydants
           </p>
@@ -316,12 +332,32 @@
         </div>
 
         <div class="footer__info">
-          <p class="category_title">Ô Miel</p>
-          <a href=""
-            ><i class="fa-solid fa-location-pin"></i>adresse 84390 Monieux</a
+          <p
+            class="category_title"
+            itemscope
+            itemtype="https://schema.org/LocalBusiness"
+            itemprop="name"
           >
-          <a href=""><i class="fa-solid fa-phone"></i>06 06 06 06</a>
-          <a href=""><i class="fa-solid fa-at"></i>contact@omiel.fr</a>
+            Ô Miel
+          </p>
+          <a
+            href=""
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+            ><i class="fa-solid fa-location-pin"></i
+            ><span itemProp="streetAddress">adresse</span>
+            <span itemProp="postalCode">84390</span>
+            <span itemProp="addressLocality">Monieux</span>
+          </a>
+          <a href=""
+            ><i class="fa-solid fa-phone"></i
+            ><span itemProp="telephone">06 06 06 06</span></a
+          >
+          <a href=""
+            ><i class="fa-solid fa-at"></i>
+            <span itemprop="email">contact@omiel.fr</span></a
+          >
         </div>
         <div class="footer__links">
           <p class="category_title">Liens utile</p>
