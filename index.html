@@ -34,10 +34,10 @@
             </button>
             <div class="navbar__nav_anchors" id="nav-anchors">
               <button class="close-btn" id="burger-close">X</button>
-              <a href="#about">Notre Histoire</a>
-              <a href="#product">Notre Miel</a>
-              <a href="#review">Vos Avis</a>
-              <a href="#question">Vos Questions</a>
+              <a href="#about" id="burger-close">Notre Histoire</a>
+              <a href="#product" id="burger-close">Notre Miel</a>
+              <a href="#review" id="burger-close">Vos Avis</a>
+              <a href="#faq" id="burger-close">Vos Questions</a>
             </div>
           </div>
         </nav>
@@ -55,7 +55,7 @@
           <button class="cta">Découvrir</button>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__image">
           <img
             src="./assets/presentation_img.webp"
@@ -76,7 +76,7 @@
           </p>
         </div>
       </section>
-      <section class="product">
+      <section class="product" id="product">
         <h1>Notre Miel de Lavande récolté en Provence</h1>
         <div class="product__wrapper">
           <img
@@ -118,7 +118,7 @@
       <div class="cta-conteneur">
         <button class="cta">En savoir plus</button>
       </div>
-      <section class="review">
+      <section class="review" id="review">
         <h1>Vos avis</h1>
         <div class="review__conteneur">
           <div class="review__card">
@@ -206,7 +206,7 @@
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <h1>Vos questions, nos réponses!</h1>
         <div class="faq__conteneur">
           <div class="faq__card">
@@ -264,7 +264,31 @@
           </div>
         </div>
       </section>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__logo">
+          <img
+            src="./assets/logo.webp"
+            alt="Logo de l'entreprise O Miel représentant une abeille dans un style simple"
+          />
+        </div>
+        <div class="footer__socials">
+          <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer__info">
+          <p class="category_title">Ô Miel</p>
+          <a href=""
+            ><i class="fa-solid fa-location-pin"></i>adresse 84390 Monieux</a
+          >
+          <a href=""><i class="fa-solid fa-phone"></i>06 06 06 06</a>
+          <a href=""><i class="fa-solid fa-at"></i>contact@omiel.fr</a>
+        </div>
+        <div class="footer__links">
+          <p class="category_title">Liens utile</p>
+          <a href="">Conditions générales</a>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/script.js" defer></script>
   </body>
