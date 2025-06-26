@@ -34,10 +34,10 @@
             </button>
             <div class="navbar__nav_anchors" id="nav-anchors">
               <button class="close-btn" id="burger-close">X</button>
-              <a href="#about" id="burger-close">Notre Histoire</a>
-              <a href="#product" id="burger-close">Notre Miel</a>
-              <a href="#review" id="burger-close">Vos Avis</a>
-              <a href="#faq" id="burger-close">Vos Questions</a>
+              <a href="#about" class="close-btn">Notre Histoire</a>
+              <a href="#product" class="close-btn">Notre Miel</a>
+              <a href="#review" class="close-btn">Vos Avis</a>
+              <a href="#faq" class="close-btn">Vos Questions</a>
             </div>
           </div>
         </nav>
@@ -52,7 +52,8 @@
             Le miel de lavande de notre
             <span class="text-highlight">Provence</span>
           </h1>
-          <button class="cta">Découvrir</button>
+
+          <a href="#product"> <button class="cta">Découvrir</button></a>
         </div>
       </section>
       <section class="about" id="about">
@@ -125,7 +126,7 @@
             <div class="card-top">
               <img
                 src="./assets/profile_picture_e.webp"
-                alt="Profil de l'utilisateur"
+                alt="Profil de l'utilisateur E"
               />
               <div class="info-conteneur">
                 <p class="name">Émilie Avignon</p>
@@ -153,7 +154,7 @@
             <div class="card-top">
               <img
                 src="./assets/profile_picture_m.webp"
-                alt="Profil de l'utilisateur"
+                alt="Profil de l'utilisateur M"
               />
               <div class="info-conteneur">
                 <p class="name">Mathile Royer</p>
@@ -171,7 +172,8 @@
               <p class="main-content">
                 Ce miel est tout simplement délicieux. On sent la lavande sans
                 que ce soit trop fort. J'en mets dans mes tisanes tous les
-                soirs. Un vrai petit luxe local !
+                soirs. Un vrai petit luxe local ! Je le recommande à tout mon
+                entourage !
               </p>
               <p class="more">Lire plus</p>
             </div>
@@ -180,7 +182,7 @@
             <div class="card-top">
               <img
                 src="./assets/profile_picture_j.webp"
-                alt="Profil de l'utilisateur"
+                alt="Profil de l'utilisateur J"
               />
               <div class="info-conteneur">
                 <p class="name">Julien Renaux</p>
@@ -196,7 +198,7 @@
             </div>
             <div class="card-content">
               <p class="main-content">
-                Ce miel m’a rappelé mes vacances en Provence, quand on sentait
+                Ce miel m'a rappelé mes vacances en Provence, quand on sentait
                 la lavande en pleine nature. Il a une texture crémeuse, un goût
                 rond, fleuri, mais pas trop sucré. Et surtout, il ne pique pas
                 la gorge comme certains...
@@ -207,7 +209,7 @@
         </div>
       </section>
       <section class="faq" id="faq">
-        <h1>Vos questions, nos réponses!</h1>
+        <h1>Vos questions, nos réponses !</h1>
         <div class="faq__conteneur">
           <div class="faq__card">
             <h2 class="question">
@@ -227,11 +229,9 @@
               <span class="text-highlight">crstallise</span> ?
             </h2>
             <p class="answer">
-              Le miel de lavande est produit quand les abeilles butinent les
-              fleurs de lavande en été. Un apiculteur de Provence installe ses
-              ruches près des champs pour que les abeilles récoltent un nectar
-              pur. Il est transformé en miel de lavande similaire au miel de
-              garrigue qui lui utilise plusieurs plantes.
+              La cristallisation est un phénomène naturel qui prouve la pureté
+              du miel. Il suffit de le réchauffer légèrement au bain-marie pour
+              lui redonner sa texture initiale. Évitez le micro-ondes.
             </p>
           </div>
           <div class="faq__card">
@@ -241,10 +241,9 @@
               <span class="text-highlight">lavande</span> ?
             </h2>
             <p class="answer">
-              Le miel de lavande est produit quand les abeilles butinent les
-              fleurs de lavande en été. Un apiculteur de Provence installe ses
-              ruches près des champs pour que les abeilles récoltent un nectar
-              pur. Il est transformé en miel de lavande similaire au miel de
+              Le miel de lavande est produit lorsque les abeilles butinent les
+              fleurs de lavande en été. Les ruches sont près des champs pour que
+              les abeilles récoltent un nectar pur. Similaire au miel de
               garrigue qui lui utilise plusieurs plantes.
             </p>
           </div>
@@ -270,12 +269,19 @@
             src="./assets/logo.webp"
             alt="Logo de l'entreprise O Miel représentant une abeille dans un style simple"
           />
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/">
+              ‎<i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              >‎<i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com"
+              >‎<i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </div>
-        <div class="footer__socials">
-          <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+
         <div class="footer__info">
           <p class="category_title">Ô Miel</p>
           <a href=""
