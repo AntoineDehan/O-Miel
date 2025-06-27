@@ -123,10 +123,11 @@ body {
               font-size: 1.25rem;
               font-weight: bold;
               text-align: center;
-              &:visited {
-                color: $main-text-color;
+              &:visited .text-highlight {
+                color: inherit;
               }
             }
+
             .close-btn {
               border: none;
               background-color: $main-bg-color;
@@ -669,9 +670,13 @@ body {
       }
       .hero {
         height: 650px;
-        &__img {
-          object-fit: cover;
+        picture {
+          &__img {
+            object-fit: cover;
+            object-position: 10%;
+          }
         }
+
         &__accroche {
           left: 75%;
         }

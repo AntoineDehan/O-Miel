@@ -123,8 +123,8 @@ body .main-conteneur header .navbar__nav_anchors a {
   font-weight: bold;
   text-align: center;
 }
-body .main-conteneur header .navbar__nav_anchors a:visited {
-  color: #1a1a1a;
+body .main-conteneur header .navbar__nav_anchors a:visited .text-highlight {
+  color: inherit;
 }
 body .main-conteneur header .navbar__nav_anchors .close-btn {
   border: none;
@@ -612,8 +612,9 @@ body .main-conteneur footer .footer__links a {
   body .main-conteneur .hero {
     height: 650px;
   }
-  body .main-conteneur .hero__img {
+  body .main-conteneur .hero picture__img {
     object-fit: cover;
+    object-position: 10%;
   }
   body .main-conteneur .hero__accroche {
     left: 75%;
